@@ -1,22 +1,22 @@
 <template>
   <div id="app">
+    <!-- 顶部 -->
     <top />
     <index />
   </div>
 </template>
 
 <script>
-import top from './components/01.top.vue';
-import index from './components/02.index.vue';
+import top from "./components/01.top.vue";
+import index from "./components/02.index.vue";
 export default {
-  name: 'app',
+  name: "app",
   components: {
     top,
-    index
-  }
+    index,
+  },
 };
 </script>
 
 <style >
-
 </style>

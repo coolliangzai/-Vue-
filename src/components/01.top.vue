@@ -14,7 +14,15 @@
     </div>
     <div class="right-box">
       <div class="el-input el-input--small el-input--prefix">
-        <input type="text" autocomplete="off" placeholder="搜索" class="el-input__inner" />
+        <!-- 搜索框 -->
+        <input
+          type="text"
+          autocomplete="off"
+          placeholder="搜索"
+          class="el-input__inner"
+          v-model="inputValue"
+          @keyup.enter="toResult"
+        />
         <span class="el-input__prefix">
           <i class="el-input__icon el-icon-search"></i>
         </span>
@@ -28,8 +36,18 @@ export default {
   name: "top",
   data() {
     return {
+      inputValue: "",
       query: "",
     };
+  },
+  methods: {
+    toResult() {
+      if (this.inputValue == "") {
+        this.$message.warning("请输入内容");
+      } else {
+        this.$router.push("/result?q=" + this.inputValue);
+      }
+    },
   },
 };
 </script>
