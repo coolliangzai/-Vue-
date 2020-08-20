@@ -45,6 +45,7 @@ export default {
       if (this.inputValue == "") {
         this.$message.warning("请输入内容");
       } else {
+        console.log(1);
         this.$router.push("/result?q=" + this.inputValue);
       }
     },

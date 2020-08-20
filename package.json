@@ -1,5 +1,5 @@
 {
-  "name": "hmplayer",
+  "name": "player",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -25,5 +25,18 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolliangzai/-Vue-.git"
+  },
+  "keywords": [],
+  "author": "xbj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coolliangzai/-Vue-/issues"
+  },
+  "homepage": "https://github.com/coolliangzai/-Vue-#readme"
 }

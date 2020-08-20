@@ -137,7 +137,7 @@ export default {
           },
         }).then((res) => {
           this.musicList = res.data.result.songs;
-          // console.log(this.musicList);
+          console.log(this.musicList);
           this.count = res.data.result.songCount;
           this.musicList.forEach(function (val) {
             let time = val.duration;
@@ -238,6 +238,7 @@ export default {
     },
   },
   created() {
+    console.log(2);
     //获取搜索结果
     axios({
       method: "get",
